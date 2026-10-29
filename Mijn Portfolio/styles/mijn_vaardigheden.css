@@ -1,0 +1,83 @@
+p, h1, h2, div{
+    margin: 0;
+    padding: 0;
+}
+
+*::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #d1d5db;
+}
+
+.intro{
+    justify-self: center;
+    text-align: center;
+    line-height: 1em;
+    margin-bottom: 3em;
+}
+
+table{
+    border-collapse: collapse;
+    justify-self: center;
+    font-size: 1.7em;
+    
+}
+
+.groups{
+    font-style: italic;
+}
+
+th{
+    text-align: center;    /*vraag*/
+}
+
+th, td{
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: start;
+    padding: 0.5em 1.4em 0.5em 0.3em;
+    
+}
+
+.intro h2{
+    color: rgb(76, 76, 76);
+    margin-top: 1rem;
+}
+
+.div_main_container{
+    width: 50rem;
+    justify-self: center;
+}
+
+.containers_div{
+    display: flex;
+    vertical-align: top;
+    justify-content: center;   
+    gap: 2rem;
+    
+}
+
+.containers_div h2{
+    display: inline-block;
+    border: solid 2px black;
+    width: 20.66rem;
+    margin: 1em 0 ;
+    padding: 0.2em;
+    text-align: center;
+    align-self: center;
+}
+
+.table_div{
+    background-color: white;
+    margin-top: 1rem;
+    padding: 1em;
+    border: solid 2px black;
+    border-radius: 1em;
+    box-shadow: 1em 0.5em 1em rgb(79, 79, 79);
+}
+
+.table_div>h2{
+    margin-bottom: 1rem;
+}

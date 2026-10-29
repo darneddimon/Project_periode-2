@@ -1,0 +1,16 @@
+footer{
+    background-color: white;
+    margin: 2.5em 2.5em;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    /*box-shadow: 2em 2em 10em rgb(70, 203, 137);*/
+    border-radius: 1em;
+}
+
+footer p{
+    margin: 0.5em 1em;
+    display: inline-block;
+}
+

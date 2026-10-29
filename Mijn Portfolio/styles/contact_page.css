@@ -1,0 +1,123 @@
+p, h1{
+    margin: 0;
+}
+
+a{
+    color: rgb(85, 26, 139);
+}
+
+
+body{
+    background-color: #d1d5db;
+}
+
+.h1{
+    justify-self: center;
+    font-size: 3em;
+}
+
+.main_p{
+    justify-self: center;
+    color: rgb(90, 90, 87);
+    font-size: 1.5em;
+    margin-bottom: 2em;
+}
+
+.cards{
+    
+    justify-content: center;
+    justify-self: center;
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+    
+}
+
+.contacts_div{
+    display: block;
+    background-color: white;
+    width: 28em;
+    padding: 2em;
+    border-radius: 2em;
+    border: black solid 1px;
+    box-shadow: 1em 1em 2.5em;
+    
+}
+
+
+
+.text_green{
+    background-color: rgb(212, 247, 212);
+    border-radius: 1em;
+    padding: 0.3em 0.5em;
+    display: inline-block;
+    margin: 0.3em 0.1em 1.7em;
+}
+
+.text_cards{
+    line-height: 1.6em;
+}
+
+.contacten{
+    width: 23em;
+}
+
+.dot_css{
+    display: inline-block;
+    width: 0.7em;
+    height: 0.7em;
+    background-color: rgb(39, 158, 39);
+    border-radius: 1em;
+    margin-right: 0.3em;
+    justify-self: center;
+}
+
+
+.form_div{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 28em;
+    padding: 2em;
+    border-radius: 2em;
+    border: black solid 1px;
+    gap: 0.5em;
+    justify-content: flex-end;
+    box-shadow: 1em 1em 2.5em;
+}
+
+.input_name_email{
+    display: block;
+    padding: 0.6em;
+    border: 1px solid grey;
+    border-radius: 0.5em;
+}
+
+.input_message{
+    height: 4em;
+    resize: none;
+    padding: 0.6em;
+    border: 1px solid grey;
+    border-radius: 0.5em;
+}
+
+.send_button{
+    
+    padding: 0.8em 1.5em;
+    border-radius: 0.5em;
+    background-color: rgb(36, 36, 73);
+    border: none;
+    color: white;
+    
+}
+
+.send_button:hover{
+    opacity: 0.9;
+}
+
+.send_button:active{
+    opacity: 0.7;
+}
+
+
+
