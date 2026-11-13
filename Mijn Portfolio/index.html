@@ -7,28 +7,52 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/nav_bare.css">
     <link rel="stylesheet" href="styles/footer.css">
-    <script src="js/alert.js" defer></script>
+    <link rel="stylesheet" href="styles/cookies.css">
+    <script src="js/main.js" defer></script>
 </head>
 <body>
     <header>
+        <div class="header_laptop">
             <nav>
                 <div class="left_nav">
                     <img class="logo" src="img/channel-1.jpeg" alt="logo">
                     <p>Mijn<br>Portfolio</p>
                 </div>
-                <ul class="list_nav">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="mijn_vaardigheden.html">Mijn Vaardigheden</a></li>
-                    <li><a href="Over_ons.html">Over ons</a></li>
-                    <li><a href="Contact_page.html">Contact Pagina</a></li>
-                </ul>
+                <div class="right_nav">
+                    <ul class="list_nav">
+                        <li><a href="index.html" id="ya">Home</a></li>
+                        <li><a href="mijn_vaardigheden.html">Mijn Vaardigheden</a></li>
+                        <li><a href="Over_ons.html">Over ons</a></li>
+                        <li><a href="Contact_page.html">Contact Pagina</a></li>
+                    </ul>
+                    
+                </div>
+                <button class="dark_button" id='toggle'>Dark Mode</button>
+                <button class="light_button">licht</button>
             </nav>
-        </header>
+        </div>
+    </header>
     <main>
+        <div id="cookie">
+            <img src="img/8933123.png" alt="Cookie Icon">
+            <div class="cookie_text">
+                <h2>We use cookies</h2>
+                <p>This website uses cookies to ensure you get the best experience on our website.</p>
+                
+                <div class="cookie_buttons">
+                    <button id="reject_button">Reject</button>
+                    <button id="accept_button">Accept</button>
+                </div>
+        </div>
+    </div>
             <div class="main">
                 <div class="main_up">
                     <div class="left_up">
+                        
                         <h1>Ik leer webontwikkeling en maak mijn eerste digitale project</h1>
+                        <p id="welcome_morning">Goedemorgen!</p>
+                        <p id="welcome_afternoon">Goedemiddag!</p>
+                        <p id="welcome_evening">Goedenavond!</p>
                         <p class="text_top">
                             Hoi! Mijn naam is Dima Porkhun. Dit is mijn studeportfolio, dat ik helemaal vanaf
                             nul opmaak als onderdeel van een schoolproject. Al bijna een maand duik ik in de 
@@ -39,7 +63,7 @@
                         </p>
                     </div>
                     <div class="img_div">
-                        <img class="img_globaleconectiviteit" src="img/global-communication-background-business-network-design_1108314-242689.avif" alt="">
+                        <img class="img_globaleconectiviteit" id="img_connectiviteit" src="img/global-communication-background-business-network-design_1108314-242689.avif" alt="">
                     </div>
                 </div>
                 <div class="cards_bottom">
