@@ -1,8 +1,9 @@
+
+
 button{
     margin: 0;
     padding: 0;
 }
-
 
 
 header{
@@ -59,12 +60,12 @@ nav{
 }
 
 nav>button{
-    display: flex;
     align-items: center;
     color: white;
     padding: 10px;
     border-radius: 20px;
     border: none;
+    font-weight:bold;
 }
 
 .right_nav>ul>li>a:hover{
@@ -72,42 +73,60 @@ nav>button{
     color: white;
 }
 
-
-
-.light_button{
-    display: none;
-    background-color: rgba(255, 255, 255, 0);
-}
-
-.dark_button{
+#switch_btn{
     display: flex;
-    background-color: rgba(255, 255, 255, 0);
+    align-items: center;
+    justify-content: center;
 }
 
-.dark_button,
-.light_button{
-    transition: background-color 2s;
+#background_btn{
+    width: 50px;
+    height: 20px;
+    margin-right: 10px;
+    display: flex;
+    border-radius: 20px;
+    background-color: grey;
+    cursor: pointer;
+    justify-content: left;
+    transition: background-color 0.5s;
 }
 
-.dark_button:hover{
-    background-color: rgba(0, 0, 0, 0.391);
+#background_btn.active{
+    background-color: darkgreen;
 }
 
-.light_button:hover{
-    background-color: rgba(255, 255, 255, 0.4);
+#cirkel_btn{
+    display: flex;
+    width: 26px;
+    height: 26px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    align-self: center;
+    transition: all 0.3s ease-in-out;
 }
 
-.light_button:active,
-.dark_button:active{
-    opacity: 0.7;
+#cirkel_btn.active{
+    transform: translateX(26px);
 }
 
+.dark_mode_div>p{
+    display: flex;
+    color: white;
+}
+
+.dark_mode_div{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
 
 .left_nav{
     display: flex;
     align-items: center;
     gap: 20px;
     color: white;
+    font-weight: bold;
 }
 
 .left_nav>img{
@@ -115,3 +134,18 @@ nav>button{
     max-width: 50px;
 }
 
+@media (max-width: 320px) {
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 1200px) {
+
+}
+
+header{
+   
+}

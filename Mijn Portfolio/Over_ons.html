@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="styles/Over_ons.css">
     <link rel="stylesheet" href="styles/nav_bare.css">
     <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/cookies.css">
+    <script type="module" src="js/cookies.js" defer></script>
+    <script type="module" src="js/darkMode.js" defer></script>
 </head>
 <body>
     <header>
@@ -23,14 +26,30 @@
                         <li><a href="Over_ons.html">Over ons</a></li>
                         <li><a href="Contact_page.html">Contact Pagina</a></li>
                     </ul>
-                    
                 </div>
-                <button class="dark_button" id='toggle'>Dark Mode</button>
-                <button class="light_button">licht</button>
+                <div class="dark_mode_div">
+                    <div id="switch_btn">
+                        <div id="background_btn"><div id="cirkel_btn"></div></div>
+                        
+                    </div>
+                    <p>Dark Mode</p>
+                </div>
+                
             </nav>
         </div>
     </header>
     <main>
+        <div id="cookie">
+            <img src="img/8933123.png" alt="Cookie Icon">
+            <div class="cookie_text">
+                <h2>We use cookies</h2>
+                <p>This website uses cookies to ensure you get the best experience on our website.</p> 
+                <div class="cookie_buttons">
+                    <button id="reject_button">Reject</button>
+                    <button id="accept_button">Accept</button>
+                </div>
+            </div>
+        </div>
         <div class="div_main_text">
             <p class="main_text">Over ons</p>
             <p class="onderwerp_text">Ik leer software maken en schone code schrijven</p>
@@ -62,6 +81,7 @@
                         <h3 class="div_card_p_"><b>Mijn vaardigheden:</b></h3>
                         <button class="button">HTML</button>
                         <button class="button">CSS</button>
+                        <button class="button">Java Script</button>
                         <h3 class="div_card_p_"><b>Talen die ik spreek:</b></h3>
                         <button class="button">Russich</button>
                         <button class="button">Oekrains</button>

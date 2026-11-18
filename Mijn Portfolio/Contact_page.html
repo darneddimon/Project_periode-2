@@ -8,7 +8,8 @@
         <link rel="stylesheet" href="styles/nav_bare.css">
         <link rel="stylesheet" href="styles/footer.css">
         <link rel="stylesheet" href="styles/cookies.css">
-        <script src="js/main.js" defer></script>
+        <script type="module" src="js/cookies.js" defer></script>
+        <script type="module" src="js/darkMode.js" defer></script>
     </head>
     <body>
         <header>
@@ -25,14 +26,30 @@
                             <li><a href="Over_ons.html">Over ons</a></li>
                             <li><a href="Contact_page.html">Contact Pagina</a></li>
                         </ul>
-                        
                     </div>
-                    <button class="dark_button" id='toggle'>Dark Mode</button>
-                    <button class="light_button">licht</button>
+                    <div class="dark_mode_div">
+                        <div id="switch_btn">
+                            <div id="background_btn"><div id="cirkel_btn"></div></div>
+                            
+                        </div>
+                        <p>Dark Mode</p>
+                    </div>
+                    
                 </nav>
             </div>
         </header>
         <main>
+            <div id="cookie">
+                <img src="img/8933123.png" alt="Cookie Icon">
+                <div class="cookie_text">
+                    <h2>We use cookies</h2>
+                    <p>This website uses cookies to ensure you get the best experience on our website.</p> 
+                    <div class="cookie_buttons">
+                        <button id="reject_button">Reject</button>
+                        <button id="accept_button">Accept</button>
+                    </div>
+                </div>
+            </div>
             <h1 class="h1">
                 Neem contact met me op
             </h1>

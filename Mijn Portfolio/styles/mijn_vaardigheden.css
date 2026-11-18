@@ -1,3 +1,23 @@
+
+
+:root{
+    --bg-color: #ffffffc1;
+    --main: #ffffff;
+    --text-color: #000000;
+    --cards_bottom: #ffffff;
+    --shadow-box: rgb(0, 0, 0);
+    --welcome: rgba(0, 0, 0, 0.321);
+}
+
+:root.dark{
+    --bg-color: #000000ea;
+    --main: #00000018;
+    --text-color: #ffffff;
+    --cards_bottom: #343333a8;
+    --shadow-box: rgb(44, 117, 186);
+    --welcome: grey;
+}
+
 p, h1, h2, div{
     margin: 0;
     padding: 0;
@@ -7,8 +27,18 @@ p, h1, h2, div{
     box-sizing: border-box;
 }
 
+.visible{
+    display: flex;
+}
+
+.hidden{
+    display: none;
+}
+
+
 body{
-    background-color: #d1d5db;
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
 
 .intro{
@@ -16,6 +46,7 @@ body{
     text-align: center;
     line-height: 1em;
     margin-bottom: 3em;
+    color: var(--text-color);
 }
 
 table{
@@ -59,6 +90,10 @@ th, td{
     
 }
 
+.hidden{
+    display: none !important;
+}
+
 .containers_div h2{
     display: inline-block;
     border: solid 2px black;
@@ -70,7 +105,7 @@ th, td{
 }
 
 .table_div{
-    background-color: white;
+    background-color: var(--cards_bottom);
     margin-top: 1rem;
     padding: 1em;
     border: solid 2px black;
@@ -81,3 +116,33 @@ th, td{
 .table_div>h2{
     margin-bottom: 1rem;
 }
+
+@media (max-width: 820px) {
+    th, td{
+        padding: 0.5em 1.4em 0.5em 0.3em;
+        font-size: 3vw;
+    }
+
+    .div_main_container{
+        width: 90vw;
+    }
+
+    .containers_div{
+        font-size: 2vw;
+    }
+
+    .intro{
+        margin: 0;
+    }
+
+    .intro>h1{
+        font-size: 4vw;
+        margin-bottom: 1vw;
+    }
+
+    .intro>h2{
+        font-size: 3vw;
+        margin-top: 1vw;
+    }
+}
+    

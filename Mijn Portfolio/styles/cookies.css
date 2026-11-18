@@ -10,7 +10,7 @@ h2{
     align-items: center;
     display: flex;
     justify-self: center;
-    max-width: 900px;
+    max-width: 80vw;
     flex-direction: row;
     background-color: rgb(235, 221, 187);
     border-radius: 10px;
@@ -47,6 +47,10 @@ h2{
 
 .hidden{
     display: none !important;
+}
+
+.visible{
+    display: flex !important;
 }
 
 #reject_button{

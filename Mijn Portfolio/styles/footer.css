@@ -1,5 +1,8 @@
+
+
+
 footer{
-    background-color: white;
+    background-color: var(--bg-color);
     margin: 2.5em 2.5em;
     border: 1px solid black;
     display: flex;
@@ -12,5 +15,11 @@ footer{
 footer p{
     margin: 0.5em 1em;
     display: inline-block;
+}
+
+@media (max-width: 560px) {
+    footer{
+        font-size: 13px;
+    }
 }
 
