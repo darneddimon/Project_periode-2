@@ -83,7 +83,10 @@ nav{
     justify-self: center;
     padding: 1vw 2vw;
     border-radius: 20px;
+    
 }
+
+
 
 #right_nav.open>ul{
     flex-direction: column;

@@ -113,7 +113,7 @@ main{
     margin: 0.2em 0.2em;
 }
 
-button:hover{
+.button_div>button:hover{
     background-color: rgb(96, 96, 241);
     color: white;
 }
