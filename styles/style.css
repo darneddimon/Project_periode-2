@@ -95,7 +95,7 @@ body{
 
 
 .text_top{
-    margin-top: 1rem;
+    margin: 1rem 0;
     overflow-wrap: anywhere;   
     font-size: 2rem; 
     width: 30rem;
