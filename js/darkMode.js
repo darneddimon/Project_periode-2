@@ -6,7 +6,7 @@ const cirkel = document.getElementById("cirkel_btn");
 const root = document.documentElement; 
 
 document.addEventListener("DOMContentLoaded", function() {
-    if (getCookie("darkMode") == "true") {
+    if (localStorage.getItem("darkMode") === "true") {
     backgroundButton.classList.toggle("active")
     cirkel.classList.toggle("active")
     root.classList.toggle("dark")
@@ -19,6 +19,7 @@ darkModeButton.addEventListener("click", function() {
     cirkel.classList.toggle("active")
     root.classList.toggle("dark")
     const isDark = root.classList.contains("dark");
-    setCookie("darkMode", isDark, 30)
     console.log(document.cookie)
+
+    localStorage.setItem("darkMode", isDark)
 })

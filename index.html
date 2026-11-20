@@ -11,33 +11,39 @@
     <script type="module" src="js/cookies.js" defer></script>
     <script type="module" src="js/darkMode.js" defer></script>
     <script src="js/Home.js" defer></script>
+    <script src="js/burgerMenu.js" defer></script>
 </head>
 <body>
     <header>
-        <div class="header_laptop">
-            <nav>
-                <div class="left_nav">
-                    <img class="logo" src="img/channel-1.jpeg" alt="logo">
-                    <p>Mijn<br>Portfolio</p>
-                </div>
-                <div class="right_nav">
-                    <ul class="list_nav">
-                        <li><a href="index.html" id="ya">Home</a></li>
-                        <li><a href="mijn_vaardigheden.html">Mijn Vaardigheden</a></li>
-                        <li><a href="Over_ons.html">Over ons</a></li>
-                        <li><a href="Contact_page.html">Contact Pagina</a></li>
-                    </ul>
-                </div>
+        <nav>
+            <div class="left_nav">
+                <img class="logo" src="img/channel-1.jpeg" alt="logo">
+                <p>Mijn<br>Portfolio</p>
+            </div>
+            
+            <div class="right_nav" id="right_nav">
+                <ul class="list_nav" id="list_nav">
+                    <li><a href="index.html" id="ya">Home</a></li>
+                    <li><a href="mijn_vaardigheden.html">Mijn Vaardigheden</a></li>
+                    <li><a href="Over_ons.html">Over ons</a></li>
+                    <li><a href="Contact_page.html">Contact Pagina</a></li>
+                </ul>
+            </div>
+            <div class="right_nav_mobile">
+                <button id="burger_menu">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </button>
                 <div class="dark_mode_div">
                     <div id="switch_btn">
                         <div id="background_btn"><div id="cirkel_btn"></div></div>
-                        
+                            
                     </div>
-                    <p>Dark Mode</p>
+                        <p>Dark Mode</p>
+                    </div>
                 </div>
-                
             </nav>
-        </div>
     </header>
     <main>
         <div id="cookie">
@@ -107,9 +113,12 @@
                             </p>
                         </div>
                     </div>
-
                     
                 </div>
+            </div>
+            <div id="timer_div">
+                <p>Timer tot inleveren datum (8 January)</p>
+                <p id="timer"></p>
             </div>
     </main>
     <footer>

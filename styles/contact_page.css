@@ -22,7 +22,9 @@ p, h1{
     margin: 0;
 }
 
-
+main{
+    margin-top: 50px;
+}
 
 
 body{
@@ -111,6 +113,7 @@ body{
     border: 1px solid grey;
     border-radius: 0.5em;
     background-color: var(--main);
+    color: var(--text-color);
 }
 
 .input_message{
@@ -120,6 +123,7 @@ body{
     border: 1px solid grey;
     border-radius: 0.5em;
     background-color: var(--main);
+    color: var(--text-color);
 }
 
 .send_button{

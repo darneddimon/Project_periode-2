@@ -29,6 +29,10 @@ body{
     color: var(--text-color);
 }
 
+main{
+    margin-top: 50px;
+}
+
 .div_main_text{
     display: flex;
     justify-self: center;

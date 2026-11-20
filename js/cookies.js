@@ -51,6 +51,7 @@ if (getCookie("cookieStatus") === "") {
     })
 } else if (getCookie("cookieStatus") === "accepted") {
   cookiePopUp.classList.add("hidden")
+  console.log(`cookies = ${getCookie("cookieStatus")}`)
 }
   
-console.log(`cookies = ${getCookie("cookieStatus")}`)
+
