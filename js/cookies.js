@@ -47,9 +47,9 @@ if (getCookie("cookieStatus") === "") {
     rejectButton.addEventListener("click", function() {
         console.log("cookies declined");
         setCookie("cookieStatus", "declined", 30);
-        cookiePopUp.classList.add("hidden")
+        cookiePopUp.classList.add("hidden");
     })
-} else if (getCookie("cookieStatus") === "accepted") {
+} else {
   cookiePopUp.classList.add("hidden")
   console.log(`cookies = ${getCookie("cookieStatus")}`)
 }
